@@ -204,7 +204,7 @@
             bindings = <
 &kp N1              &kp N2           &kp N3           &kp N4             &kp N5      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp UNDER       &kp PLUS            &kp TILDE
 &hm LCTRL NUMBER_6  &hm LEFT_ALT N7  &hm LEFT_GUI N8  &hm LEFT_SHIFT N9  &kp N0      &kp LEFT_BRACKET      &hm RSHFT RIGHT_BRACKET  &hm RCMD MINUS  &hm LEFT_ALT EQUAL  &hm RCTRL GRAVE
-&kp PLUS            &kp MINUS        &kp ASTERISK     &kp SLASH          &kp KP_DOT  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp SEMICOLON   &kp COLON           &kp BACKSLASH
+&kp PLUS            &kp MINUS        &kp ASTERISK     &kp SLASH          &kp KP_DOT  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp LESS_THAN   &kp GREATER_THAN    &kp BACKSLASH
                                      &mo 6                               &trans      &mo 6                                          &trans
             >;
         };
