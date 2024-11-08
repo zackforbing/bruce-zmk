@@ -262,7 +262,7 @@
 &kp N1               &kp N2            &kp N3                  &kp PLUS               &kp STAR    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp UNDER        &kp PLUS             &kp TILDE
 &hml LCTRL NUMBER_4  &hml LEFT_ALT N5  &hml LEFT_GUI NUMBER_6  &hsl LEFT_SHIFT MINUS  &kp SLASH   &kp LEFT_BRACKET      &hsr RSHFT RIGHT_BRACKET  &hmr RCMD MINUS  &hmr LEFT_ALT EQUAL  &hmr RCTRL GRAVE
 &kp N7               &kp N8            &kp N9                  &kp N0                 &kp KP_DOT  &kp LEFT_BRACE        &kp RIGHT_BRACE           &kp LESS_THAN    &kp GREATER_THAN     &kp BACKSLASH
-                                       &mo 6                                          &trans      &mo 6                                           &trans
+                                       &trans                                         &trans      &trans                                          &trans
             >;
         };
 
@@ -277,19 +277,19 @@
 
         navfunc {
             bindings = <
-&mt LALT PG_UP      &kp HOME        &mt LG(LEFT_SHIFT) UP_ARROW  &mt LEFT_ALT END  &kp LS(LA(LC(BACKSLASH)))  &trans      &kp F9         &kp F10           &kp F11           &kp F12
-&mt LALT PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN                     &kp RIGHT         &kp BACKSPACE              &kp DELETE  &hsr LSHFT F5  &hmr LEFT_GUI F6  &hmr LEFT_ALT F7  &hmr LCTRL F8
-&kp LG(Z)           &kp LG(X)       &kp LG(C)                    &kp LG(V)         &kp LS(LG(K))              &trans      &kp F1         &kp F2            &kp F3            &kp F4
-                                    &trans                                         &trans                     &trans                     &trans
+&mt LALT PG_UP            &kp HOME        &mt LA(LEFT_SHIFT) UP_ARROW  &mt LEFT_ALT END  &kp LS(LA(LC(BACKSLASH)))  &trans      &kp F9         &kp F10           &kp F11           &kp F12
+&mt LEFT_SHIFT PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN                     &mt LSHFT RIGHT   &kp BACKSPACE              &kp DELETE  &hsr LSHFT F5  &hmr LEFT_GUI F6  &hmr LEFT_ALT F7  &hmr LCTRL F8
+&kp LG(Z)                 &kp LG(X)       &kp LG(C)                    &kp LG(V)         &kp LS(LG(K))              &trans      &kp F1         &kp F2            &kp F3            &kp F4
+                                          &trans                                         &trans                     &trans                     &trans
             >;
         };
 
         navfunc_win {
             bindings = <
-&mt LCTRL PG_UP  &trans     &trans     &trans     &trans         &trans  &trans  &trans         &trans  &trans
-&trans           &trans     &trans     &trans     &trans         &trans  &trans  &hmr RCTRL F6  &trans  &hmr RGUI F8
-&kp LC(Z)        &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LS(LC(K))  &trans  &trans  &trans         &trans  &trans
-                            &trans                &trans         &trans          &trans
+&mt LCTRL PG_UP  &trans     &mt LS(LCTRL) UP_ARROW  &trans     &trans         &trans  &trans  &trans         &trans  &trans
+&trans           &trans     &trans                  &trans     &trans         &trans  &trans  &hmr RCTRL F6  &trans  &hmr RGUI F8
+&kp LC(Z)        &kp LC(X)  &kp LC(C)               &kp LC(V)  &kp LS(LC(K))  &trans  &trans  &trans         &trans  &trans
+                            &trans                             &trans         &trans          &trans
             >;
         };
 
