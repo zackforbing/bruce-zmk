@@ -24,7 +24,7 @@
             quick-tap-ms = <150>;
             flavor = "balanced";
             require-prior-idle-ms = <250>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33>;
         };
 
         hsl: HOMEROW_L_SHIFT {
@@ -37,7 +37,7 @@
             quick-tap-ms = <250>;
             flavor = "balanced";
             require-prior-idle-ms = <0>;
-            hold-trigger-key-positions = <5 15 25 6 16 26 7 8 9 9 17 18 19 27 28 29 33 32>;
+            hold-trigger-key-positions = <5 15 25 6 16 26 7 8 9 9 17 18 19 27 28 29 33>;
         };
 
         esc: esc {
@@ -86,7 +86,7 @@
             quick-tap-ms = <150>;
             flavor = "balanced";
             require-prior-idle-ms = <250>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30>;
         };
 
         hsr: HOMEROW_R_SHIFT {
@@ -99,7 +99,7 @@
             quick-tap-ms = <250>;
             flavor = "balanced";
             require-prior-idle-ms = <0>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30>;
         };
     };
 
@@ -133,12 +133,12 @@
 
         hold_space {
             bindings = <&kp SPACE>;
-            key-positions = <23 32>;
+            key-positions = <23 31>;
         };
 
         caps_word {
             bindings = <&caps_word>;
-            key-positions = <14 15>;
+            key-positions = <13 16>;
         };
 
         toggle_nav {
@@ -165,7 +165,7 @@
 
         soft_off {
             bindings = <&soft_off>;
-            key-positions = <0 32 9 33>;
+            key-positions = <0 32 9 31>;
         };
 
         bootloader {
@@ -185,7 +185,7 @@
 
         globe {
             bindings = <&kp GLOBE>;
-            key-positions = <4 5>;
+            key-positions = <21 20 22>;
         };
 
         toggle_win {
@@ -202,6 +202,28 @@
         force_quit_mac {
             bindings = <&kp LA(LG(ESCAPE))>;
             key-positions = <0 1 2>;
+        };
+
+        lt6_word_bksp_mac {
+            bindings = <&lt 6 LA(BACKSPACE)>;
+            key-positions = <20 21>;
+        };
+
+        lt6_word_bksp_win {
+            bindings = <&lt 6 LC(BACKSPACE)>;
+            key-positions = <20 21>;
+            layers = <1>;
+        };
+
+        lt6_word_del_win {
+            bindings = <&lt 6 LC(DEL)>;
+            key-positions = <20 22>;
+            layers = <1>;
+        };
+
+        lt6_word_del_mac {
+            bindings = <&lt 6 LA(DELETE)>;
+            key-positions = <20 22>;
         };
     };
 
@@ -229,7 +251,7 @@
         base_win {
             bindings = <
 &trans       &trans  &trans        &trans  &trans  &trans  &trans  &trans        &trans  &trans
-&hml LGUI A  &trans  &hml LCTRL D  &trans  &trans  &trans  &trans  &hml RCTRL K  &trans  &hml RGUI SQT
+&hml LGUI A  &trans  &hml LCTRL D  &trans  &trans  &trans  &trans  &hmr RCTRL K  &trans  &hmr RGUI SQT
 &trans       &trans  &trans        &trans  &trans  &trans  &trans  &trans        &trans  &trans
                      &trans                &trans  &trans          &trans
             >;
@@ -238,7 +260,7 @@
         numsym {
             bindings = <
 &kp N1               &kp N2            &kp N3                  &kp PLUS               &kp STAR    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp UNDER        &kp PLUS             &kp TILDE
-&hml LCTRL NUMBER_4  &hml LEFT_ALT N5  &hml LEFT_GUI NUMBER_6  &hml LEFT_SHIFT MINUS  &kp SLASH   &kp LEFT_BRACKET      &hml RSHFT RIGHT_BRACKET  &hml RCMD MINUS  &hml LEFT_ALT EQUAL  &hml RCTRL GRAVE
+&hml LCTRL NUMBER_4  &hml LEFT_ALT N5  &hml LEFT_GUI NUMBER_6  &hsl LEFT_SHIFT MINUS  &kp SLASH   &kp LEFT_BRACKET      &hsr RSHFT RIGHT_BRACKET  &hmr RCMD MINUS  &hmr LEFT_ALT EQUAL  &hmr RCTRL GRAVE
 &kp N7               &kp N8            &kp N9                  &kp N0                 &kp KP_DOT  &kp LEFT_BRACE        &kp RIGHT_BRACE           &kp LESS_THAN    &kp GREATER_THAN     &kp BACKSLASH
                                        &mo 6                                          &trans      &mo 6                                           &trans
             >;
@@ -247,7 +269,7 @@
         numsym_win {
             bindings = <
 &trans              &trans  &trans         &trans  &trans  &trans  &trans  &trans            &trans  &trans
-&hml LGUI NUMBER_6  &trans  &hml LCTRL N8  &trans  &trans  &trans  &trans  &hml RCTRL MINUS  &trans  &hml RGUI GRAVE
+&hml LGUI NUMBER_6  &trans  &hml LCTRL N8  &trans  &trans  &trans  &trans  &hmr RCTRL MINUS  &trans  &hmr RGUI GRAVE
 &trans              &trans  &trans         &trans  &trans  &trans  &trans  &trans            &trans  &trans
                             &trans                 &trans  &trans          &trans
             >;
@@ -255,19 +277,19 @@
 
         navfunc {
             bindings = <
-&mt LEFT_SHIFT PG_UP  &mt LEFT_ALT HOME  &mt LG(LEFT_SHIFT) UP_ARROW  &mt LEFT_ALT END  &kp LS(LA(LC(BACKSLASH)))  &trans      &kp F9         &kp F10           &kp F11           &kp F12
-&mt LALT PAGE_DOWN    &kp LEFT_ARROW     &kp DOWN                     &kp RIGHT         &kp BACKSPACE              &kp DELETE  &hsl LSHFT F5  &hml LEFT_GUI F6  &hml LEFT_ALT F7  &hml LCTRL F8
-&kp LG(Z)             &kp LG(X)          &kp LG(C)                    &kp LG(V)         &kp LS(LG(K))              &trans      &kp F1         &kp F2            &kp F3            &kp F4
-                                         &trans                                         &mo 6                      &trans                     &mo 6
+&mt LALT PG_UP      &kp HOME        &mt LG(LEFT_SHIFT) UP_ARROW  &mt LEFT_ALT END  &kp LS(LA(LC(BACKSLASH)))  &trans      &kp F9         &kp F10           &kp F11           &kp F12
+&mt LALT PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN                     &kp RIGHT         &kp BACKSPACE              &kp DELETE  &hsr LSHFT F5  &hmr LEFT_GUI F6  &hmr LEFT_ALT F7  &hmr LCTRL F8
+&kp LG(Z)           &kp LG(X)       &kp LG(C)                    &kp LG(V)         &kp LS(LG(K))              &trans      &kp F1         &kp F2            &kp F3            &kp F4
+                                    &trans                                         &trans                     &trans                     &trans
             >;
         };
 
         navfunc_win {
             bindings = <
-&trans                &mt LALT HOME  &trans     &mt LALT END  &trans         &trans  &trans  &trans         &trans  &trans
-&hml LCTRL PAGE_DOWN  &trans         &trans     &trans        &trans         &trans  &trans  &hml RCTRL F6  &trans  &hml RGUI F8
-&kp LC(Z)             &kp LC(X)      &kp LC(C)  &kp LC(V)     &kp LS(LC(K))  &trans  &trans  &trans         &trans  &trans
-                                     &trans                   &trans         &trans          &trans
+&mt LCTRL PG_UP  &trans     &trans     &trans     &trans         &trans  &trans  &trans         &trans  &trans
+&trans           &trans     &trans     &trans     &trans         &trans  &trans  &hmr RCTRL F6  &trans  &hmr RGUI F8
+&kp LC(Z)        &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LS(LC(K))  &trans  &trans  &trans         &trans  &trans
+                            &trans                &trans         &trans          &trans
             >;
         };
 
