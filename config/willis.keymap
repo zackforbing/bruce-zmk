@@ -237,10 +237,10 @@
 
         numsym {
             bindings = <
-&kp N1               &kp N2            &kp N3            &kp N4              &kp N5      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp UNDER        &kp PLUS             &kp TILDE
-&hml LCTRL NUMBER_6  &hml LEFT_ALT N7  &hml LEFT_GUI N8  &hml LEFT_SHIFT N9  &kp N0      &kp LEFT_BRACKET      &hml RSHFT RIGHT_BRACKET  &hml RCMD MINUS  &hml LEFT_ALT EQUAL  &hml RCTRL GRAVE
-&kp PLUS             &kp MINUS         &kp ASTERISK      &kp SLASH           &kp KP_DOT  &kp LEFT_BRACE        &kp RIGHT_BRACE           &kp LESS_THAN    &kp GREATER_THAN     &kp BACKSLASH
-                                       &mo 6                                 &trans      &mo 6                                           &trans
+&kp N1               &kp N2            &kp N3                  &kp PLUS               &kp STAR    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp UNDER        &kp PLUS             &kp TILDE
+&hml LCTRL NUMBER_4  &hml LEFT_ALT N5  &hml LEFT_GUI NUMBER_6  &hml LEFT_SHIFT MINUS  &kp SLASH   &kp LEFT_BRACKET      &hml RSHFT RIGHT_BRACKET  &hml RCMD MINUS  &hml LEFT_ALT EQUAL  &hml RCTRL GRAVE
+&kp N7               &kp N8            &kp N9                  &kp N0                 &kp KP_DOT  &kp LEFT_BRACE        &kp RIGHT_BRACE           &kp LESS_THAN    &kp GREATER_THAN     &kp BACKSLASH
+                                       &mo 6                                          &trans      &mo 6                                           &trans
             >;
         };
 
