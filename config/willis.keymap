@@ -206,24 +206,24 @@
 
         lt6_word_bksp_mac {
             bindings = <&lt 6 LA(BACKSPACE)>;
-            key-positions = <20 21>;
+            key-positions = <30 31>;
         };
 
         lt6_word_bksp_win {
             bindings = <&lt 6 LC(BACKSPACE)>;
-            key-positions = <20 21>;
+            key-positions = <30 31>;
             layers = <1>;
         };
 
         lt6_word_del_win {
             bindings = <&lt 6 LC(DEL)>;
-            key-positions = <20 22>;
+            key-positions = <32 33>;
             layers = <1>;
         };
 
         lt6_word_del_mac {
             bindings = <&lt 6 LA(DELETE)>;
-            key-positions = <20 22>;
+            key-positions = <32 33>;
         };
     };
 
