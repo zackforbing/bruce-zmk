@@ -12,6 +12,11 @@
     hold-while-undecided;
 };
 
+&mt {
+    quick-tap-ms = <250>;
+    tapping-term-ms = <250>;
+};
+
 / {
     behaviors {
         hml: HOMEROW_L_MODS {
