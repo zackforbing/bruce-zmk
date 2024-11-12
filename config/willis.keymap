@@ -262,7 +262,7 @@
         numsym_win {
             bindings = <
 &trans              &trans  &trans         &trans  &trans  &trans  &trans  &trans            &trans  &trans
-&hml LGUI NUMBER_6  &trans  &hml LCTRL N8  &trans  &trans  &trans  &trans  &hmr RCTRL MINUS  &trans  &hmr RGUI GRAVE
+&hml LGUI NUMBER_4  &trans  &hml LCTRL N6  &trans  &trans  &trans  &trans  &hmr RCTRL MINUS  &trans  &hmr RGUI GRAVE
 &trans              &trans  &trans         &trans  &trans  &trans  &trans  &trans            &trans  &trans
                             &trans                 &trans  &trans          &trans
             >;
