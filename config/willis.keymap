@@ -218,6 +218,11 @@
             bindings = <&mo 6>;
             key-positions = <32 33>;
         };
+
+        studio_unlock {
+            bindings = <&jsdoc>;
+            key-positions = <20 21 28 29>;
+        };
     };
 
     macros {
